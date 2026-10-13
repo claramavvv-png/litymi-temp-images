@@ -213,7 +213,7 @@ function renderGrid(){
   +'<button type="button" class="arrow l" aria-label="Show front view" data-act="side" data-id="'+it.id+'" data-v="front"'+(c.side==='front'?' disabled':'')+'>'+CH.replace('%P','M11 3 L5 9 L11 15')+'</button>'
   +'<button type="button" class="arrow r" aria-label="Show back view" data-act="side" data-id="'+it.id+'" data-v="back"'+(c.side==='back'?' disabled':'')+'>'+CH.replace('%P','M7 3 L13 9 L7 15')+'</button>'
   +'<div class="vl">'+c.side.toUpperCase()+'</div></div>'
-  +'<div class="body"><div><div class="row1"><div class="pname">'+it.name+'</div><div class="price">A$[PRICE]</div></div><div class="desc">'+it.desc+'</div></div>'+opts
+  +'<div class="body"><div><div class="row1"><div class="pname">'+it.name+'</div><div class="price">A$'+it.price+'</div></div><div class="desc">'+it.desc+'</div></div>'+opts
   +'<div class="cta"><a class="btn dark" href="/products/'+it.handle+'">ADD TO PREORDER</a></div></div></div>';}).join('');
  h+='<div class="callout"><svg width="30" height="30" viewBox="0 0 34 34" aria-hidden="true"><path d="M17 0 L20 14 L34 17 L20 20 L17 34 L14 20 L0 17 L14 14 Z" fill="#D9B99B"/></svg><div class="big">Get it as a set</div><p>Pair any top with shorts or the wide-leg pants and save on the set.</p><a class="btn" href="#sets">BUILD YOUR SET</a></div>';
  $('grid').innerHTML=h;
