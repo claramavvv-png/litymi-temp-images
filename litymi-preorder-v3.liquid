@@ -1,7 +1,8 @@
-<!-- LITYMI summer preorder page. One file: HTML + CSS + JS. Images live in the images/ folder. -->
+<!-- LITYMI summer preorder page. -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cormorant+Garamond:wght@500;600&display=swap" rel="stylesheet">
 <style>
+#header-group,footer{display:none!important}
 .lt{--gold:#D9B99B;--ink:#0B0B0B;--cream:#EFE9DE;--sand:#E6DECE;--brown:#3A2C1D;--mute:#CFC4B2;width:100%;background:var(--cream);color:#4A3A28;font-family:'Cormorant Garamond',serif;font-size:20px;line-height:1.5;overflow-x:hidden}
 .lt *{box-sizing:border-box}
 .lt a{text-decoration:none}
@@ -108,7 +109,7 @@
 <div class="lt" id="top">
 <div class="bar">SUMMER EDITION PREORDER · NOW OPEN</div>
 <div class="nav"><a class="brand" href="#top">LITYMI</a>
-<div class="navl"><a href="#shop">SHOP</a><a href="#sets">SETS</a><a href="#details">DETAILS</a><a href="#faq">FAQ</a><a href="/cart" style="font-weight:600;color:#0B0B0B">PREORDER BAG</a></div></div>
+<div class="navl"><a href="#shop">SHOP</a><a href="#sets">SETS</a><a href="#details">DETAILS</a><a href="#faq">FAQ</a><a href="#contact">CONTACT</a><a href="/cart" style="font-weight:600;color:#0B0B0B">PREORDER BAG</a></div></div>
 
 <div class="hero"><div class="txt">
 <div class="eyebrow">SUMMER EDITION</div>
@@ -120,7 +121,7 @@
 <div class="how"><div class="in">
 <div class="st"><div class="n">01</div><div class="t">Pick your pieces</div><div>Single items or a matching set, in cream or black.</div></div>
 <div class="st"><div class="n">02</div><div class="t">Preorder and pay</div><div>Your order is confirmed by email and goes into production.</div></div>
-<div class="st"><div class="n">03</div><div class="t">We ship to you</div><div>Ships about [X] weeks after preorders close, with tracking.</div></div></div></div>
+<div class="st"><div class="n">03</div><div class="t">We ship to you</div><div>Ships about 2 weeks after preorders close, with tracking.</div></div></div></div>
 
 <div class="sec sand" id="shop">
 <div class="head"><div class="eyebrow">SUMMER EDITION</div><h2>Preorder the pieces</h2></div>
@@ -145,7 +146,7 @@
 <div class="sum"><div id="sum"></div>
 <div class="pr"><b>A$[SET PRICE]</b><i>Save A$[X] compared with buying separately</i></div>
 <a class="btn" id="setBuy" href="/products/[SET-HANDLE]">PREORDER THIS SET</a>
-<div class="note">Preorder · ships about [X] weeks after preorders close</div></div></div></div></div>
+<div class="note">Preorder · ships about 2 weeks after preorders close</div></div></div></div></div>
 
 <div class="sec det" id="details">
 <div class="head"><div class="eyebrow">THE MARK</div><h2>The details</h2></div>
@@ -154,11 +155,12 @@
 
 <div class="sec sand" id="faq"><h2 style="text-align:center">Preorder questions</h2>
 <div class="faq">
-<details><summary>When will my order ship?<span>+</span></summary><div>Preorders ship about [X] weeks after the preorder closes. We'll email you tracking when your order is on its way.</div></details>
+<details><summary>When will my order ship?<span>+</span></summary><div>Your order ships about 2 weeks after the preorder closes. We'll email you tracking as soon as it's on its way.</div></details>
 <details><summary>Can I buy pieces on their own?<span>+</span></summary><div>Yes. Every piece is sold separately. Buy a matching set to save on the pair.</div></details>
-<details><summary>How does sizing fit?<span>+</span></summary><div>[SIZE GUIDE: add your measurements for each piece]</div></details>
-<details><summary>Can I return or exchange a preorder?<span>+</span></summary><div>[RETURNS POLICY: add your own policy here]</div></details>
-<details><summary>Where do you ship?<span>+</span></summary><div>[SHIPPING INFO: places you ship to and the cost]</div></details></div></div>
+<details><summary>How does sizing fit?<span>+</span></summary><div>Each piece is cut to its own fit. <b>Oversized Tee:</b> boxy and relaxed, so take your usual size for the intended loose look or size down for a closer fit. <b>Baby Tee, Cropped Zip Hoodie and Long Sleeve Crop:</b> fitted and cropped, so take your usual size, or size up if you're between sizes or want more room. <b>Zip Hoodie:</b> relaxed fit. <b>Wide-Leg Pants and Shorts:</b> drawstring waist, so they adjust to you; shorts come in knee or short length. Not sure? Email us at litymiclothing@gmail.com and we'll help you pick.</div></details>
+<details><summary>Can I return or exchange a preorder?<span>+</span></summary><div>You can cancel a preorder for a full refund any time before it goes into production. Unworn items with tags attached can be returned or exchanged within 14 days of delivery. If something arrives faulty or isn't what you ordered, email us within 30 days and we'll replace or refund it. Email litymiclothing@gmail.com with your order number to start a return or exchange.</div></details>
+<details><summary>Where do you ship?<span>+</span></summary><div>We currently ship within Australia only. Shipping is tracked and the cost is shown at checkout. Orders ship about 2 weeks after the preorder closes.</div></details>
+<details><summary>How do I contact you?<span>+</span></summary><div>Email <a href="mailto:litymiclothing@gmail.com" style="color:#7A5F3F;text-decoration:underline">litymiclothing@gmail.com</a>. We reply as soon as we can.</div></details></div></div>
 
 <div class="sec darkbg" style="text-align:center;gap:24px">
 <h2 style="font-size:clamp(28px,4vw,40px)">Get first access to the next drop</h2>
@@ -166,7 +168,11 @@
 <form class="signup" method="post" action="/contact#contact_form"><input type="hidden" name="form_type" value="customer"><input type="hidden" name="utf8" value="✓"><input type="hidden" name="contact[tags]" value="newsletter">
 <input type="email" name="contact[email]" placeholder="you@email.com" aria-label="Email" required><button class="btn" type="submit">JOIN THE LIST</button></form></div>
 
-<div class="foot"><div class="top"><div class="logo">LITYMI</div><a href="https://instagram.com/[HANDLE]">INSTAGRAM [@HANDLE]</a></div>
+<div class="sec sand" id="contact" style="text-align:center;gap:16px"><div class="head"><div class="eyebrow">GET IN TOUCH</div><h2>Contact</h2></div>
+<div style="max-width:560px">Questions about sizing, your preorder or a return? Email us and we'll get back to you.</div>
+<a class="btn dark" style="width:auto;max-width:100%" href="mailto:litymiclothing@gmail.com">litymiclothing@gmail.com</a></div>
+
+<div class="foot"><div class="top"><div class="logo">LITYMI</div><a href="mailto:litymiclothing@gmail.com">CONTACT</a></div>
 <div style="max-width:760px">Product images are design previews. Final garments may differ slightly in colour and fabric.</div>
 <div>© 2026 LITYMI Clothing</div></div>
 </div>
