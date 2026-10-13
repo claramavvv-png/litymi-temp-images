@@ -1,0 +1,307 @@
+<!-- LITYMI summer preorder page. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cormorant+Garamond:wght@500;600&display=swap" rel="stylesheet">
+<style>
+#header-group,footer{display:none!important}
+.lt{--gold:#D9B99B;--ink:#0B0B0B;--cream:#EFE9DE;--sand:#E6DECE;--brown:#3A2C1D;--mute:#CFC4B2;width:100%;background:var(--cream);color:#4A3A28;font-family:'Cormorant Garamond',serif;font-size:20px;line-height:1.5;overflow-x:hidden}
+.lt *{box-sizing:border-box}
+.lt a{text-decoration:none}
+.lt h1,.lt h2,.lt p{margin:0}
+.lt .cz{font-family:'Cinzel',serif}
+.lt a:focus-visible,.lt button:focus-visible,.lt summary:focus-visible,.lt input:focus-visible{outline:2px solid #C9A27A;outline-offset:3px}
+.lt .bar{background:var(--ink);color:var(--gold);font-family:'Cinzel',serif;font-size:13px;letter-spacing:.28em;text-align:center;padding:13px 16px}
+.lt .nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 32px;padding:14px 48px;background:var(--cream)}
+.lt .nav a{min-height:44px;display:inline-flex;align-items:center;color:var(--brown)}
+.lt .brand{font-family:'Cinzel',serif;font-weight:600;font-size:28px;letter-spacing:.3em;color:var(--ink)!important}
+.lt .navl{display:flex;flex-wrap:wrap;align-items:center;gap:4px 28px;font-family:'Cinzel',serif;font-size:14px;letter-spacing:.18em}
+.lt .hero{background:var(--ink);padding:72px 48px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:48px}
+.lt .hero .txt{flex:1 1 400px;min-width:0;max-width:620px;display:flex;flex-direction:column;gap:24px}
+.lt .eyebrow{font-family:'Cinzel',serif;font-size:14px;letter-spacing:.4em;color:var(--gold)}
+.lt .hero h1{font-family:'Cinzel',serif;font-weight:600;font-size:clamp(40px,6.5vw,76px);line-height:1.08;letter-spacing:.04em;color:var(--cream)}
+.lt .hero p{font-size:24px;color:var(--mute);max-width:540px}
+.lt .btns{display:flex;flex-wrap:wrap;gap:16px;align-items:center;padding-top:8px}
+.lt .btn{background:var(--gold);color:var(--ink);font-family:'Cinzel',serif;font-weight:600;font-size:15px;letter-spacing:.22em;padding:0 36px;min-height:56px;display:inline-flex;align-items:center;justify-content:center;border-radius:2px;border:0;cursor:pointer}
+.lt .btn.ghost{background:transparent;color:var(--gold);border:1px solid var(--gold);font-weight:400;font-size:14px;letter-spacing:.2em;padding:0 28px}
+.lt .btn.dark{background:var(--ink);color:var(--cream);font-size:14px;width:100%}
+.lt .hero .logo{flex:1 1 320px;min-width:0;max-width:560px}
+.lt .hero img{width:100%;height:auto;aspect-ratio:1/1;object-fit:contain;display:block}
+.lt .mq{background:var(--gold);color:var(--ink);overflow:hidden;white-space:nowrap;padding:14px 0;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink)}
+.lt .mqt{display:inline-flex;gap:32px;font-family:'Cinzel',serif;font-weight:600;font-size:14px;letter-spacing:.28em;padding-left:32px;width:max-content;will-change:transform;-webkit-animation:ltmq 38s linear infinite;animation:ltmq 38s linear infinite}
+.lt .mqt span{flex:0 0 auto}
+@-webkit-keyframes ltmq{from{-webkit-transform:translate3d(0,0,0)}to{-webkit-transform:translate3d(-50%,0,0)}}
+@keyframes ltmq{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}
+@media(max-width:640px){.lt .mqt{font-size:12px;gap:24px;-webkit-animation-duration:30s;animation-duration:30s}}
+.lt .hero h1{text-wrap:balance}
+.lt .how{padding:64px 48px;display:flex;justify-content:center}
+.lt .how .in{width:100%;max-width:1100px;display:flex;flex-wrap:wrap;gap:36px}
+.lt .how .st{flex:1 1 260px;min-width:0;display:flex;flex-direction:column;gap:8px;border-top:1px solid #B9A98F;padding-top:22px}
+.lt .how .n{font-family:'Cinzel',serif;font-size:28px;color:#8A6A45}
+.lt .how .t{font-family:'Cinzel',serif;font-size:19px;letter-spacing:.08em;color:#1A1A1A}
+.lt .sec{padding:88px 48px;display:flex;flex-direction:column;align-items:center;gap:40px}
+.lt .sand{background:var(--sand)}
+.lt .darkbg{background:var(--ink)}
+.lt .head{text-align:center;display:flex;flex-direction:column;gap:12px}
+.lt .head .eyebrow{color:#7A5F3F}
+.lt .darkbg .head .eyebrow{color:var(--gold)}
+.lt h2{font-family:'Cinzel',serif;font-weight:400;font-size:clamp(30px,4vw,44px);letter-spacing:.08em;color:#1A1A1A}
+.lt .darkbg h2{color:var(--cream)}
+.lt .tools{width:100%;max-width:1200px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 40px}
+.lt .grp{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.lt .lab{font-family:'Cinzel',serif;font-size:13px;letter-spacing:.24em;color:#5C4630;margin-right:6px}
+.lt .pill{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;min-width:48px;padding:0 14px;border:1px solid #9C8B72;border-radius:2px;background:transparent;color:var(--brown);font-family:'Cinzel',serif;font-size:13px;letter-spacing:.1em;cursor:pointer}
+.lt .pill.big{height:48px;padding:0 20px;letter-spacing:.14em}
+.lt .pill[aria-pressed=true]{background:var(--ink);color:var(--cream);border-color:var(--ink)}
+.lt .dot{width:12px;height:12px;border-radius:50%;border:1px solid #8A7A62;display:inline-block}
+.lt .grid{width:100%;max-width:1200px;display:flex;flex-wrap:wrap;gap:32px;justify-content:center;align-items:stretch}
+.lt .card{flex:1 1 320px;min-width:0;max-width:376px;background:#F6F1E7;border:1px solid #D3C7B0;display:flex;flex-direction:column}
+.lt .media{position:relative;width:100%;aspect-ratio:1/1;transition:background .25s;display:flex;align-items:center;justify-content:center}
+.lt .media.on-dark{background:#26221E}
+.lt .media.on-light{background:#F2EBDD}
+.lt .media img{width:78%;height:78%;object-fit:contain;display:block}
+.lt .tag{position:absolute;top:14px;left:14px;background:var(--gold);color:var(--ink);font-family:'Cinzel',serif;font-size:11px;letter-spacing:.24em;padding:6px 10px;z-index:1}
+.lt .arrow{position:absolute;top:50%;margin-top:-22px;width:44px;height:44px;padding:0;border:1px solid;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;background:transparent}
+.lt .arrow.l{left:12px}.lt .arrow.r{right:12px}
+.lt .arrow:disabled{opacity:.25;cursor:default}
+.lt .on-dark .arrow{background:rgba(239,233,222,.12);color:var(--cream);border-color:rgba(239,233,222,.4)}
+.lt .on-light .arrow{background:rgba(11,11,11,.05);color:#1A1A1A;border-color:rgba(11,11,11,.3)}
+.lt .vl{position:absolute;bottom:14px;left:0;right:0;text-align:center;font-family:'Cinzel',serif;font-size:11px;letter-spacing:.3em}
+.lt .on-dark .vl{color:#B9AD99}.lt .on-light .vl{color:#6B5A44}
+.lt .body{padding:24px;display:flex;flex-direction:column;gap:16px;flex:1}
+.lt .row1{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.lt .pname{font-family:'Cinzel',serif;font-weight:600;font-size:22px;letter-spacing:.05em;color:#1A1A1A}
+.lt .price{font-family:'Cinzel',serif;font-size:17px;color:var(--brown);white-space:nowrap}
+.lt .desc{font-size:18px}
+.lt .opt{display:flex;flex-direction:column;gap:8px}
+.lt .optl{font-family:'Cinzel',serif;font-size:12px;letter-spacing:.24em;color:#5C4630}
+.lt .pills{display:flex;flex-wrap:wrap;gap:8px}
+.lt .cta{margin-top:auto;padding-top:4px}
+.lt .cta a{width:100%;min-height:52px}
+.lt .callout{flex:1 1 320px;min-width:0;max-width:376px;min-height:420px;background:var(--ink);padding:36px 32px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:20px}
+.lt .callout .big{font-family:'Cinzel',serif;font-weight:600;font-size:28px;letter-spacing:.06em;line-height:1.2;color:var(--cream)}
+.lt .callout p{color:var(--mute)}
+.lt .setwrap{width:100%;max-width:1200px;display:flex;flex-wrap:wrap;gap:48px;align-items:center}
+.lt .setprev{flex:1 1 440px;min-width:0;position:relative;aspect-ratio:4/3;transition:background .25s;display:flex;align-items:center;justify-content:center;gap:4%}
+.lt .setprev img{width:44%;height:76%;object-fit:contain;display:block}
+.lt .setctl{flex:1 1 400px;min-width:0;display:flex;flex-direction:column;gap:26px}
+.lt .step{display:flex;flex-direction:column;gap:10px}
+.lt .stepl{font-family:'Cinzel',serif;font-size:12px;letter-spacing:.26em;color:var(--gold)}
+.lt .darkbg .pill{color:var(--cream);border-color:#6F6657}
+.lt .darkbg .pill[aria-pressed=true]{background:var(--gold);color:var(--ink);border-color:var(--gold)}
+.lt .sizerow{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px}
+.lt .sizerow>span{color:var(--mute);min-width:64px}
+.lt .sum{border-top:1px solid #2E2A24;padding-top:22px;display:flex;flex-direction:column;gap:14px}
+.lt .sum .pr{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px}
+.lt .sum .pr b{font-family:'Cinzel',serif;font-weight:400;font-size:28px;color:var(--cream)}
+.lt .sum .pr i{font-style:normal;color:var(--gold)}
+.lt .sum #sum{color:var(--mute)}
+.lt .sum .note{font-size:17px;color:#A99A85}
+.lt .tiers{display:flex;flex-wrap:wrap;gap:16px;justify-content:center;width:100%;max-width:900px}
+.lt .tier{flex:1 1 220px;min-width:0;border:1px solid #6F6657;padding:28px 20px;text-align:center;display:flex;flex-direction:column;gap:8px}
+.lt .tier.hot{background:var(--gold);border-color:var(--gold)}
+.lt .tier .n{font-family:'Cinzel',serif;font-size:14px;letter-spacing:.24em;color:var(--gold)}
+.lt .tier .d{font-family:'Cinzel',serif;font-size:26px;color:var(--cream)}
+.lt .tier.hot .n,.lt .tier.hot .d{color:var(--ink)}
+.lt .navl .bagbtn{font-family:inherit;font-size:inherit;letter-spacing:inherit;font-weight:600;color:#0B0B0B;background:none;border:0;cursor:pointer;min-height:44px;display:inline-flex;align-items:center;gap:8px;padding:0}
+.lt #bagN{background:var(--ink);color:var(--gold);border-radius:999px;min-width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center;font-size:12px;letter-spacing:0}
+.lt .msg{min-height:22px;font-size:16px;color:#5C4630;margin-top:8px;text-align:center}
+.lt .ov{position:fixed;inset:0;background:rgba(0,0,0,.55);opacity:0;pointer-events:none;transition:opacity .2s;z-index:9998}
+.lt .ov.on{opacity:1;pointer-events:auto}
+.lt .dr{position:fixed;top:0;right:0;height:100%;width:min(440px,100%);background:var(--cream);transform:translateX(100%);transition:transform .25s;z-index:9999;display:flex;flex-direction:column;visibility:hidden}
+.lt .dr.on{transform:none;visibility:visible}
+.lt .drh{display:flex;align-items:center;justify-content:space-between;padding:20px 24px;border-bottom:1px solid #D3C7B0}
+.lt .drh b{font-family:'Cinzel',serif;font-weight:600;font-size:18px;letter-spacing:.2em;color:#1A1A1A}
+.lt .x{background:none;border:0;font-size:32px;line-height:1;cursor:pointer;color:#1A1A1A;min-width:44px;min-height:44px}
+.lt .drb{flex:1;overflow-y:auto;padding:8px 24px}
+.lt .li{display:flex;gap:14px;padding:16px 0;border-bottom:1px solid #D3C7B0}
+.lt .li img{width:76px;height:76px;object-fit:contain;background:#F2EBDD;flex:none}
+.lt .li .t{font-family:'Cinzel',serif;font-size:15px;color:#1A1A1A}
+.lt .li .v{font-size:16px;color:#6B5A44}
+.lt .li .r{display:flex;align-items:center;justify-content:space-between;margin-top:8px;gap:8px}
+.lt .q{display:inline-flex;align-items:center;border:1px solid #9C8B72}
+.lt .q button{background:none;border:0;width:36px;height:36px;font-size:20px;cursor:pointer;color:#1A1A1A}
+.lt .q span{min-width:26px;text-align:center;font-family:'Cinzel',serif;font-size:14px}
+.lt .li s{color:#8A7A62;margin-right:6px}
+.lt .drf{padding:20px 24px;border-top:1px solid #D3C7B0;display:flex;flex-direction:column;gap:10px;background:#F6F1E7}
+.lt .drf .row{display:flex;justify-content:space-between;font-size:18px}
+.lt .drf .tot{font-family:'Cinzel',serif;font-size:20px;color:#1A1A1A}
+.lt .drf .tip{font-size:16px;color:#7A5F3F;text-align:center}
+.lt .drf .btn{width:100%}
+.lt .empty{padding:40px 0;text-align:center;color:#6B5A44}
+.lt .det img{width:100%;max-width:1100px;height:auto;aspect-ratio:1284/348;display:block}
+.lt .faq{width:100%;max-width:820px;border-bottom:1px solid #B9A98F}
+.lt details{border-top:1px solid #B9A98F}
+.lt summary{list-style:none;min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:16px;cursor:pointer;font-family:'Cinzel',serif;font-size:18px;letter-spacing:.04em;color:#1A1A1A}
+.lt summary::-webkit-details-marker{display:none}
+.lt summary span{font-size:28px;line-height:1;color:#7A5F3F;transition:transform .2s}
+.lt details[open] summary span{transform:rotate(45deg)}
+.lt details div{padding:0 0 24px}
+.lt .signup{display:flex;flex-wrap:wrap;gap:12px;width:100%;max-width:560px}
+.lt .signup input{flex:1 1 240px;height:56px;background:#161616;border:1px solid var(--gold);border-radius:2px;color:var(--cream);padding:0 16px;font-family:'Cormorant Garamond',serif;font-size:20px}
+.lt .signup button{height:56px}
+.lt .foot{background:var(--ink);border-top:1px solid #2A2A2A;padding:40px 48px;display:flex;flex-direction:column;gap:24px;color:#A99A85;font-size:16px}
+.lt .foot .top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 32px}
+.lt .foot .logo{font-family:'Cinzel',serif;font-weight:600;font-size:22px;letter-spacing:.3em;color:var(--cream)}
+.lt .foot a{color:var(--gold);font-family:'Cinzel',serif;font-size:14px;letter-spacing:.2em;min-height:44px;display:inline-flex;align-items:center}
+@media(max-width:640px){.lt .nav,.lt .hero,.lt .sec,.lt .how,.lt .foot{padding-left:20px;padding-right:20px}}
+</style>
+
+<div class="lt" id="top">
+<div class="bar">SUMMER EDITION PREORDER · NOW OPEN</div>
+<div class="nav"><a class="brand" href="#top">LITYMI</a>
+<div class="navl"><a href="#shop">SHOP</a><a href="#deals">SAVE</a><a href="#details">DETAILS</a><a href="#faq">FAQ</a><a href="#contact">CONTACT</a><button type="button" class="bagbtn" data-act="openbag">PREORDER BAG <span id="bagN">0</span></button></div></div>
+
+<div class="hero"><div class="txt">
+<div class="eyebrow">SUMMER EDITION</div>
+<h1>Dress like you've already made it.</h1>
+<div class="cz" style="letter-spacing:.3em;color:var(--gold);font-size:14px">LITYMI &middot; LARP IT TILL YOU MAKE IT</div>
+<p>Washed tees, hoodies, shorts and pants. Buy one piece, or build your own fit and save when you buy more. Preorders are open now.</p>
+<div class="btns"><a class="btn" href="#shop">PREORDER NOW</a><a class="btn ghost" href="#deals">SEE THE DEALS</a></div></div>
+<div class="logo"><img src="{{ 'logo.webp' | asset_url }}" alt="LITYMI Clothing crown and star logo" width="1000" height="1000" decoding="async"></div></div>
+
+
+<div class="mq" aria-hidden="true"><div class="mqt"><span>DRESS LIKE YOU'VE ALREADY MADE IT</span><span>&#10022;</span><span>SUMMER EDITION</span><span>&#10022;</span><span>PREORDER NOW</span><span>&#10022;</span><span>CREAM &middot; BLACK</span><span>&#10022;</span><span>SHIPS AUSTRALIA-WIDE</span><span>&#10022;</span><span>DRESS LIKE YOU'VE ALREADY MADE IT</span><span>&#10022;</span><span>SUMMER EDITION</span><span>&#10022;</span><span>PREORDER NOW</span><span>&#10022;</span><span>CREAM &middot; BLACK</span><span>&#10022;</span><span>SHIPS AUSTRALIA-WIDE</span><span>&#10022;</span></div></div>
+<div class="how"><div class="in">
+<div class="st"><div class="n">01</div><div class="t">Pick your pieces</div><div>Mix and match any pieces, in cream or black.</div></div>
+<div class="st"><div class="n">02</div><div class="t">Preorder and pay</div><div>Your order is confirmed by email and goes into production.</div></div>
+<div class="st"><div class="n">03</div><div class="t">We ship to you</div><div>Ships about 2 weeks after preorders close, with tracking.</div></div></div></div>
+
+<div class="sec sand" id="shop">
+<div class="head"><div class="eyebrow">SUMMER EDITION</div><h2>Preorder the pieces</h2></div>
+<div class="tools">
+<div class="grp"><span class="lab">COLOUR</span><span id="g-colour" class="grp"></span></div>
+<div class="grp"><span class="lab">VIEW</span><span id="g-view" class="grp"></span></div></div>
+<div class="grid" id="grid"></div></div>
+
+<div class="sec darkbg" id="deals">
+<div class="head"><div class="eyebrow">BUY MORE, SAVE MORE</div><h2>Build your own fit</h2></div>
+<div class="tiers">
+<div class="tier"><div class="n">1 PIECE</div><div class="d">Full price</div></div>
+<div class="tier"><div class="n">2 PIECES</div><div class="d">10% off</div></div>
+<div class="tier hot"><div class="n">3+ PIECES</div><div class="d">15% off</div></div></div>
+<div style="max-width:560px;text-align:center;color:var(--mute)">Mix any pieces, any colours. The discount is applied automatically at checkout.</div>
+<a class="btn" href="#shop">START PICKING</a></div>
+
+<div class="sec det" id="details">
+<div class="head"><div class="eyebrow">THE MARK</div><h2>The details</h2></div>
+<img src="{{ 'details.jpg' | asset_url }}" alt="Close-up of the small crown and star chest mark and the large LITYMI back logo" width="1284" height="348" decoding="async">
+<div style="max-width:640px;text-align:center">A small crown and star on the chest. The full LITYMI crest across the back. More than just clothing. It's a mindset.</div></div>
+
+<div class="sec sand" id="faq"><h2 style="text-align:center">Preorder questions</h2>
+<div class="faq">
+<details><summary>When will my order ship?<span>+</span></summary><div>Your order ships about 2 weeks after the preorder closes. We'll email you tracking as soon as it's on its way.</div></details>
+<details><summary>Can I buy pieces on their own?<span>+</span></summary><div>Yes. Every piece is sold separately. Buy 2 pieces and save 10%, or 3 or more and save 15%. The discount is applied automatically at checkout.</div></details>
+<details><summary>How does sizing fit?<span>+</span></summary><div>Each piece is cut to its own fit. <b>Oversized Tee:</b> boxy and relaxed, so take your usual size for the intended loose look or size down for a closer fit. <b>Baby Tee, Cropped Zip Hoodie and Long Sleeve Crop:</b> fitted and cropped, so take your usual size, or size up if you're between sizes or want more room. <b>Zip Hoodie:</b> relaxed fit. <b>Wide-Leg Pants and Shorts:</b> drawstring waist, so they adjust to you; shorts come in knee or short length. Not sure? Email us at litymiclothing@gmail.com and we'll help you pick.</div></details>
+<details><summary>Can I return or exchange a preorder?<span>+</span></summary><div>You can cancel a preorder for a full refund any time before it goes into production. Unworn items with tags attached can be returned or exchanged within 14 days of delivery. If something arrives faulty or isn't what you ordered, email us within 30 days and we'll replace or refund it. Email litymiclothing@gmail.com with your order number to start a return or exchange.</div></details>
+<details><summary>Where do you ship?<span>+</span></summary><div>We currently ship within Australia only. Shipping is tracked and the cost is shown at checkout. Orders ship about 2 weeks after the preorder closes.</div></details>
+<details><summary>What does LITYMI mean?<span>+</span></summary><div>LITYMI stands for <b>Larp It Till You Make It</b>. Dress like you've already made it.</div></details>
+<details><summary>How do I contact you?<span>+</span></summary><div>Email <a href="mailto:litymiclothing@gmail.com" style="color:#7A5F3F;text-decoration:underline">litymiclothing@gmail.com</a>. We reply as soon as we can.</div></details></div></div>
+
+<div class="sec darkbg" style="text-align:center;gap:24px">
+<h2 style="font-size:clamp(28px,4vw,40px)">Get first access to the next drop</h2>
+<div style="color:var(--mute)">Join the list and we'll email you when the next drop opens.</div>
+<form class="signup" method="post" action="/contact#contact_form"><input type="hidden" name="form_type" value="customer"><input type="hidden" name="utf8" value="✓"><input type="hidden" name="contact[tags]" value="newsletter">
+<input type="email" name="contact[email]" placeholder="you@email.com" aria-label="Email" required><button class="btn" type="submit">JOIN THE LIST</button></form></div>
+
+<div class="sec sand" id="contact" style="text-align:center;gap:16px"><div class="head"><div class="eyebrow">GET IN TOUCH</div><h2>Contact</h2></div>
+<div style="max-width:560px">Questions about sizing, your preorder or a return? Email us and we'll get back to you.</div>
+<a class="btn dark" style="width:auto;max-width:100%" href="mailto:litymiclothing@gmail.com">litymiclothing@gmail.com</a></div>
+
+<div class="ov" id="ov" data-act="closebag"></div>
+<aside class="dr" id="dr" aria-label="Your preorder bag" aria-hidden="true"><div class="drh"><b>PREORDER BAG</b><button type="button" class="x" data-act="closebag" aria-label="Close bag">&times;</button></div><div class="drb" id="drb"></div><div class="drf" id="drf"></div></aside>
+
+<div class="foot"><div class="top"><div class="logo">LITYMI</div><a href="mailto:litymiclothing@gmail.com">CONTACT</a></div>
+<div style="max-width:760px">Product images are design previews. Final garments may differ slightly in colour and fabric.</div>
+<div class="cz" style="letter-spacing:.2em;color:var(--gold);font-size:14px">LITYMI &middot; LARP IT TILL YOU MAKE IT</div>
+<div>© 2026 LITYMI Clothing</div></div>
+</div>
+
+<script>
+(function(){
+var BASE='{{ 'logo.webp' | asset_url | split: 'logo.webp' | first }}';                       // where the images live
+var img=function(n){return BASE+n+'.webp';};
+var ITEMS=[
+{id:'tee',price:59,name:'Oversized Tee',handle:'oversized-tee',part:'top',sizes:['S','M','L','XL'],desc:'Boxy fit, big logo on the back, small crown and star on the chest.'},
+{id:'baby',price:49,name:'Baby Tee',handle:'baby-tee',part:'top',sizes:['XS','S','M','L'],desc:'Fitted and cropped, with the crest across the back.'},
+{id:'hoodie',price:119,name:'Zip Hoodie',handle:'zip-hoodie',part:'top',sizes:['S','M','L','XL'],desc:'Relaxed zip hoodie with the full crest on the back.'},
+{id:'czip',price:109,name:'Cropped Zip Hoodie',handle:'cropped-zip-hoodie',part:'top',sizes:['XS','S','M','L'],desc:'Cropped boxy zip-up with a custom LITYMI zip puller and the crest on the back.'},
+{id:'ls',price:65,name:'Long Sleeve Crop',handle:'long-sleeve-crop',part:'top',sizes:['XS','S','M','L'],desc:'Fitted cropped long sleeve with the crest on the back.'},
+{id:'shorts',price:65,name:'Shorts',handle:'shorts',part:'bottom',sizes:['S','M','L','XL'],lengths:['Knee','Short'],desc:'Drawstring waist, side pockets and the mark on the leg.'},
+{id:'pants',price:95,name:'Wide-Leg Pants',handle:'wide-leg-pants',part:'bottom',sizes:['S','M','L','XL'],desc:'Wide-leg fit with an elastic drawstring waist, side pockets and the mark on the leg.'}];
+var MSG={};
+var S={colour:'cream',view:'front',card:{}};
+ITEMS.forEach(function(it){S.card[it.id]={col:'cream',side:'front',size:it.sizes[1],len:'Knee'};});
+var $=function(id){return document.getElementById(id);};
+var esc=function(s){return String(s).replace(/"/g,'&quot;');};
+function pill(label,on,attrs,extra){return '<button type="button" class="pill'+(extra||'')+'" aria-pressed="'+on+'" '+attrs+'>'+label+'</button>';}
+function dot(c){return '<span class="dot" style="background:'+(c==='cream'?'#E3D9C6':'#111')+'"></span>';}
+var CH='<svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="%P" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+function renderTop(){
+ var allC=ITEMS.every(function(i){return S.card[i.id].col===S.colour;});
+ $('g-colour').innerHTML=['cream','black'].map(function(c){return pill(dot(c)+c.toUpperCase(),allC&&S.colour===c,'data-act="allcol" data-v="'+c+'"',' big');}).join('');
+ var allS=ITEMS.every(function(i){return S.card[i.id].side===S.view;});
+ $('g-view').innerHTML=['front','back'].map(function(v){return pill(v.toUpperCase(),allS&&S.view===v,'data-act="allview" data-v="'+v+'"',' big');}).join('');
+}
+function renderGrid(){
+ var h=ITEMS.map(function(it){var c=S.card[it.id],dark=c.col==='cream';
+  var opts='<div class="opt"><div class="optl">COLOUR</div><div class="pills">'+['cream','black'].map(function(k){return pill(dot(k)+k[0].toUpperCase()+k.slice(1),c.col===k,'data-act="col" data-id="'+it.id+'" data-v="'+k+'"');}).join('')+'</div></div>'
+  +'<div class="opt"><div class="optl">SIZE</div><div class="pills">'+it.sizes.map(function(s){return pill(s,c.size===s,'data-act="size" data-id="'+it.id+'" data-v="'+s+'"');}).join('')+'</div></div>';
+  if(it.lengths)opts+='<div class="opt"><div class="optl">LENGTH</div><div class="pills">'+it.lengths.map(function(s){return pill(s,c.len===s,'data-act="len" data-id="'+it.id+'" data-v="'+s+'"');}).join('')+'</div></div>';
+  return '<div class="card"><div class="media '+(dark?'on-dark':'on-light')+'"><div class="tag">PREORDER</div>'
+  +'<img src="'+img(c.col+'-'+it.id+'-'+c.side)+'" alt="'+esc((dark?'Cream ':'Black ')+it.name+', '+c.side+' view')+'" decoding="async">'
+  +'<button type="button" class="arrow l" aria-label="Show front view" data-act="side" data-id="'+it.id+'" data-v="front"'+(c.side==='front'?' disabled':'')+'>'+CH.replace('%P','M11 3 L5 9 L11 15')+'</button>'
+  +'<button type="button" class="arrow r" aria-label="Show back view" data-act="side" data-id="'+it.id+'" data-v="back"'+(c.side==='back'?' disabled':'')+'>'+CH.replace('%P','M7 3 L13 9 L7 15')+'</button>'
+  +'<div class="vl">'+c.side.toUpperCase()+'</div></div>'
+  +'<div class="body"><div><div class="row1"><div class="pname">'+it.name+'</div><div class="price">A$'+it.price+'</div></div><div class="desc">'+it.desc+'</div></div>'+opts
+  +'<div class="cta"><button type="button" class="btn dark" data-act="add" data-id="'+it.id+'">ADD TO PREORDER</button><div class="msg" aria-live="polite">'+(MSG[it.id]||'')+'</div></div></div></div>';}).join('');
+ h+='<div class="callout"><svg width="30" height="30" viewBox="0 0 34 34" aria-hidden="true"><path d="M17 0 L20 14 L34 17 L20 20 L17 34 L14 20 L0 17 L14 14 Z" fill="#D9B99B"/></svg><div class="big">Buy more, save more</div><p>2 pieces save 10%. 3 or more save 15%. Applied automatically at checkout.</p><a class="btn" href="#deals">SEE THE DEALS</a></div>';
+ $('grid').innerHTML=h;
+}
+var money=function(c){return 'A$'+(c/100).toFixed(2);};
+var h=function(x){return String(x).replace(/[&<>"]/g,function(m){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m];});};
+function api(u,o){return fetch(u,o).then(function(r){return r.json().then(function(d){if(!r.ok)throw new Error(d.description||d.message||'Error');return d;});});}
+var CART=null;
+function loadCart(){return api('/cart.js').then(function(c){CART=c;renderCart();return c;});}
+function openBag(){$('dr').classList.add('on');$('ov').classList.add('on');$('dr').setAttribute('aria-hidden','false');document.body.style.overflow='hidden';}
+function closeBag(){$('dr').classList.remove('on');$('ov').classList.remove('on');$('dr').setAttribute('aria-hidden','true');document.body.style.overflow='';}
+function renderCart(){
+ var c=CART||{items:[],item_count:0};$('bagN').textContent=c.item_count;
+ if(!c.items.length){$('drb').innerHTML='<div class="empty">Your bag is empty.</div>';$('drf').innerHTML='<a class="btn" href="#shop" data-act="closebag">KEEP SHOPPING</a>';return;}
+ $('drb').innerHTML=c.items.map(function(i){var img=i.featured_image&&i.featured_image.url?'<img src="'+h(i.featured_image.url)+'" alt="">':'';
+  var price=i.original_line_price!==i.final_line_price?'<s>'+money(i.original_line_price)+'</s>'+money(i.final_line_price):money(i.final_line_price);
+  return '<div class="li">'+img+'<div style="flex:1;min-width:0"><div class="t">'+h(i.product_title)+'</div><div class="v">'+h(i.variant_title||'')+'</div><div class="r"><div class="q"><button type="button" aria-label="Fewer" data-act="qty" data-key="'+h(i.key)+'" data-q="'+(i.quantity-1)+'">&minus;</button><span>'+i.quantity+'</span><button type="button" aria-label="More" data-act="qty" data-key="'+h(i.key)+'" data-q="'+(i.quantity+1)+'">+</button></div><div>'+price+'</div></div></div></div>';}).join('');
+ var n=c.item_count,tip=n===1?'Add 1 more piece to save 10%':n===2?'10% off applied. Add 1 more piece for 15% off.':'15% off applied.';
+ var disc=c.total_discount>0?'<div class="row"><span>Discount</span><span>&minus;'+money(c.total_discount)+'</span></div>':'';
+ $('drf').innerHTML='<div class="tip">'+tip+'</div><div class="row"><span>Subtotal</span><span>'+money(c.original_total_price)+'</span></div>'+disc+'<div class="row tot"><span>Total</span><span>'+money(c.total_price)+'</span></div><div style="font-size:15px;color:#6B5A44;text-align:center">Shipping calculated at checkout. Free over A$150.</div><a class="btn" href="/checkout">CHECKOUT</a>';
+}
+function item(id){return ITEMS.filter(function(i){return i.id===id;})[0];}
+function setMsg(id,t){MSG[id]=t;renderGrid();}
+function addItem(id){
+ var it=item(id),c=S.card[id],title=[c.col==='cream'?'Cream':'Black',c.size].concat(it.lengths?[c.len]:[]).join(' / ');
+ setMsg(id,'Adding...');
+ api('/products/'+it.handle+'.js').then(function(p){var v=p.variants.filter(function(x){return x.title===title;})[0];if(!v)throw new Error('missing');
+  return api('/cart/add.js',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({items:[{id:v.id,quantity:1}]})});})
+ .then(loadCart).then(function(){setMsg(id,'Added to your bag');openBag();setTimeout(function(){if(MSG[id]==='Added to your bag')setMsg(id,'');},2500);})
+ .catch(function(){setMsg(id,'Could not add this one. Please try again.');});
+}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeBag();});
+document.querySelector('.lt').addEventListener('click',function(e){
+ var b=e.target.closest('[data-act]');if(!b)return;var a=b.getAttribute('data-act'),v=b.getAttribute('data-v'),id=b.getAttribute('data-id');
+ if(a==='openbag'){openBag();return;}
+ if(a==='closebag'){closeBag();return;}
+ if(a==='add'){addItem(id);return;}
+ if(a==='qty'){api('/cart/change.js',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({id:b.getAttribute('data-key'),quantity:parseInt(b.getAttribute('data-q'),10)})}).then(function(c){CART=c;renderCart();});return;}
+ if(a==='allcol'){S.colour=v;ITEMS.forEach(function(i){S.card[i.id].col=v;});}
+ else if(a==='allview'){S.view=v;ITEMS.forEach(function(i){S.card[i.id].side=v;});}
+ else if(a==='col')S.card[id].col=v;else if(a==='side')S.card[id].side=v;else if(a==='size')S.card[id].size=v;else if(a==='len')S.card[id].len=v;
+ else return;
+ renderTop();renderGrid();
+});
+renderTop();renderGrid();loadCart().catch(function(){});
+// preload every image so colour and front/back swaps never flash
+setTimeout(function(){ITEMS.forEach(function(i){['cream','black'].forEach(function(c){['front','back'].forEach(function(s){(new Image()).src=img(c+'-'+i.id+'-'+s);});});});},800);
+})();
+</script>
+
+{% schema %}
+{ "name": "LITYMI preorder page", "presets": [{ "name": "LITYMI preorder page" }] }
+{% endschema %}
